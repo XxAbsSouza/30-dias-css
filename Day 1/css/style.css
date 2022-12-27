@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-title: 'Press Start 2P', cursive;
+    --font-p: 'Roboto Serif', serif;
+}
+
+html {
+    font-family: var(--font-title);
+    font-size: 62.5%;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    padding: 5em 0;
+    font-size: 2.3rem;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    margin-top: -2.5rem;
+    padding: 2rem 4rem;
+    border-radius: 3rem;
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    border-width: 0.16rem;
+    border-color: #f7fbd1;
+    background-color: #1e5046;
+    color: white;
+    font-family: var(--font-p);
+    font-size: 1.6rem;
+    transition: 0.8s ease-in-out;
+}
+
+button:hover {
+        cursor: pointer;
+        background-color: #112c26;
+        font-weight: bolder;
+        transform: scale(1.1);
+}
+
+button:focus {
+    background-color: #438f73;
+    border-color: #eef1bc;
+    font-weight: bolder;
+    transform: scale(1.3);
+}
+
+button::after {
+    content: "H e y 🌞 ~hover me~";
+}
+
+button:hover::after {
+    content: "🍒 ~Now click me~";
+}
+
+button:focus::after {
+    content: "🐱‍👤 I am clicked";
+}
+
+html {
+    background: linear-gradient(to right, #F8FFAE, #43C6AC);
+}

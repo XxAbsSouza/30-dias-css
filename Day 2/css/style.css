@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-title: 'Press Start 2P', cursive;
+    --font-p: 'Roboto Serif', serif;
+}
+
+html {
+    font-family: var(--font-title);
+    font-size: 62.5%;
+    background: linear-gradient(to right, #ffc3a0, #FFAFBD);
+}
+
